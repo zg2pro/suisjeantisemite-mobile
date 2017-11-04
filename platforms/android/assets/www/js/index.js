@@ -28,6 +28,14 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+		
+		
+		if (navigator.connection.type == Connection.NONE) {
+		  navigator.notification.alert('An internet connection is required to continue');
+		} else {
+		  window.location="http://suis.je.antisemite.free.fr";
+		}
+		
     },
 
     // Update DOM on a Received Event
