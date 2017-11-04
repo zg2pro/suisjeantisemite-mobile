@@ -2,6 +2,9 @@
   "name": "com.github.zg2pro.suisjeantisemite",
   "version": "1.0.0",
   "displayName": "Sja",
+  "scripts": {
+    "build": "cordova build --release"
+  },
   "cordova": {
     "platforms": [
       "android"
